@@ -64,23 +64,43 @@ div.navbar {
 
 /* tidsbokning */
 
-
 fieldset {
-    margin-top: 100px;
-    height: 250px;
-    width: 400px;
-    font-weight: lighter;
-    text-align: left;
+    margin: 100px;
+    height: 500px;
+    width: 800px;
     padding-top: 50px;
+    position: relative;
 }
+/* fieldset text styling */
+
 fieldset p {
     font-family: 'Courgette';
     background-color: rgb(255, 255, 255, 0.6);
     padding: 5px;
+    font-weight: lighter;
+    text-align: center;
     border: 1px solid #fff;
     border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
 }
+/* fieldset header styling */
 
+
+/* fieldset background styling */
+
+.bakgrund-tid {
+   background-image: url(../images/evas.fotvardplatta.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center left;
+}
+/* form section styling */
+fieldset {
+    background-image: url();
+}
 legend {
     font-family: 'Courgette';
     background: linear-gradient(0.25turn, #83796a, #bcdda2, #ddd);
@@ -88,11 +108,16 @@ legend {
    font-weight: lighter;
    font-size: large;
 }
-.bakgrund-tid {
-   background-image: url(../images/evas.fotvardplatta.webp);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center left;
+
+label, input, button {
+
+    margin-bottom: 0 auto;
+    
+    
+}
+input[type=text], input[type=email], input[type=number] {
+    width: 25%;
+    
 }
 
 
@@ -103,15 +128,15 @@ legend {
     div.navbar a {
         float: left;
         width: 33.333333%;
-        font-size: smaller;
+        font-size: large;
         margin: 0 auto;
         padding: 0px;
          
     }
     fieldset {
         width: 100%;
-        height: 350px;
-        margin: 0 auto;
+        height: auto;
+        margin-top: 50px;
         font-size: larger;
         
     }

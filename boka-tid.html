@@ -27,7 +27,7 @@
             
                 <div class="container">
                     <fieldset class="bakgrund-tid">
-                        <legend>Boka Tid</legend>
+                        
                             <p>Ring mig på 070-287 48 00 eller fyll i formuläret nedanför så ringer jag upp så fort jag kan.
                                 <br>
                                 Varmt Välkommen <i class="fas fa-hand-holding-heart"></i>
@@ -36,8 +36,36 @@
             
                     </fieldset>
                 </div>
-         
+                        <fieldset class="form">
+                            <legend>Boka Tid</legend>
+                            <form action="https://formsubmit.co/your@email.com" method="POST">
+                    
+                                <label for="name">Ditt Namn</label>
+                    
+                            <div class="inputs">
+                                <input type="text" name="name" required>
+                            </div>
+                        
+                            <label for="email">Din Email Address(valfritt)</label>
+                        
+                            <div class="inputs">
+                                <input type="email" name="email">
+                            </div>
+
+                        
+                            <label for="number">Ditt Nummer</label>
+                        
+                            <div class="inputs">
+                                <input type="number" name="number" required>
+                            </div>      
+
+                            <div class="inputs">
+                                <button type="submit">Skicka</button>
+                            </div>  
+               </form>  
+                    </fieldset>
             </div>
+
     </div>             
 </body>
 </html>
