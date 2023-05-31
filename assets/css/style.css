@@ -14,16 +14,34 @@ body {
 /* Logo style */
 
 header {
-    background: linear-gradient(0.25turn, #ffebcd, #ebf8e1, #f69d3c);
+background: linear-gradient(0.25turn, #cdfdff, #ebf8e1, #f1c698);
 text-align: center;
 letter-spacing: 3px;
 font-family: 'Amiri', serif;
 color: darkolivegreen;
-padding-top: 25px;
+padding-bottom: 30px;
+overflow: hidden;
+
+/* animates zoom effect on logo, credit to code institute  */
+animation-name: zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+        
+    }
+}
+
 
 /* for text under logo */
-}
-h2 {
+
+header.header h2 {
+    font-weight: 100;
     margin: 0 auto;
     text-transform: capitalize;
 }
@@ -52,12 +70,21 @@ div.navbar {
     color: black;
 }
 .background-after {
-    background: linear-gradient(0.25turn, #ffebcd, #ebf8e1, #f69d3c);
+    background-color: #fff;
     overflow: hidden;
 }
-/* Style for first section of page */
+/*style for home page */
+div.home-page {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+/* style for opening image and info */
 
-/* appointment book image and info */
+
+
+/* book appointment image and info */
 
 
 fieldset.fill {
